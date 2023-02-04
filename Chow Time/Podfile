@@ -6,5 +6,7 @@ target 'Chow Time' do
   use_frameworks!
 
   # Pods for Chow Time
+pod 'FirebaseAuth'
+pod 'FirebaseFirestore'
 
 end
