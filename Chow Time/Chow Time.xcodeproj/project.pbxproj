@@ -17,6 +17,10 @@
 		05EFF22C298F1AD500B869A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF22B298F1AD500B869A0 /* Constants.swift */; };
 		05EFF22F298F1B7C00B869A0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF22D298F1B7C00B869A0 /* MainTableViewCell.swift */; };
 		05EFF230298F1B7C00B869A0 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EFF22E298F1B7C00B869A0 /* MainTableViewCell.xib */; };
+		05EFF232298F5C1600B869A0 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF231298F5C1600B869A0 /* RestaurantViewController.swift */; };
+		05EFF234298F5C7000B869A0 /* hallData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF233298F5C7000B869A0 /* hallData.swift */; };
+		05EFF237298F5CEC00B869A0 /* DiningHallViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF235298F5CEC00B869A0 /* DiningHallViewCell.swift */; };
+		05EFF238298F5CEC00B869A0 /* DiningHallViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EFF236298F5CEC00B869A0 /* DiningHallViewCell.xib */; };
 		39896D7F21A7488F87996AB5 /* Pods_Chow_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F80BE8CB81A3696EBC7C11 /* Pods_Chow_Time.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,10 @@
 		05EFF22B298F1AD500B869A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05EFF22D298F1B7C00B869A0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		05EFF22E298F1B7C00B869A0 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		05EFF231298F5C1600B869A0 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		05EFF233298F5C7000B869A0 /* hallData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hallData.swift; sourceTree = "<group>"; };
+		05EFF235298F5CEC00B869A0 /* DiningHallViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningHallViewCell.swift; sourceTree = "<group>"; };
+		05EFF236298F5CEC00B869A0 /* DiningHallViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiningHallViewCell.xib; sourceTree = "<group>"; };
 		19F80BE8CB81A3696EBC7C11 /* Pods_Chow_Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chow_Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0D86A7C278FEC92816917F /* Pods-Chow Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chow Time.debug.xcconfig"; path = "Target Support Files/Pods-Chow Time/Pods-Chow Time.debug.xcconfig"; sourceTree = "<group>"; };
 		BC86A357EC0E8A044D8940D2 /* Pods-Chow Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chow Time.release.xcconfig"; path = "Target Support Files/Pods-Chow Time/Pods-Chow Time.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 				05EFF22D298F1B7C00B869A0 /* MainTableViewCell.swift */,
 				05EFF22E298F1B7C00B869A0 /* MainTableViewCell.xib */,
 				05EFF217298EC8FC00B869A0 /* SceneDelegate.swift */,
+				05EFF231298F5C1600B869A0 /* RestaurantViewController.swift */,
+				05EFF235298F5CEC00B869A0 /* DiningHallViewCell.swift */,
+				05EFF236298F5CEC00B869A0 /* DiningHallViewCell.xib */,
+				05EFF233298F5C7000B869A0 /* hallData.swift */,
 				05EFF219298EC8FC00B869A0 /* ViewController.swift */,
 				05EFF21B298EC8FC00B869A0 /* Main.storyboard */,
 				05EFF21E298EC8FE00B869A0 /* Assets.xcassets */,
@@ -166,6 +178,7 @@
 				05EFF222298EC8FE00B869A0 /* LaunchScreen.storyboard in Resources */,
 				05EFF21F298EC8FE00B869A0 /* Assets.xcassets in Resources */,
 				05EFF230298F1B7C00B869A0 /* MainTableViewCell.xib in Resources */,
+				05EFF238298F5CEC00B869A0 /* DiningHallViewCell.xib in Resources */,
 				05EFF21D298EC8FC00B869A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,9 +234,12 @@
 			files = (
 				05EFF22C298F1AD500B869A0 /* Constants.swift in Sources */,
 				05EFF21A298EC8FC00B869A0 /* ViewController.swift in Sources */,
+				05EFF232298F5C1600B869A0 /* RestaurantViewController.swift in Sources */,
 				05EFF216298EC8FC00B869A0 /* AppDelegate.swift in Sources */,
+				05EFF234298F5C7000B869A0 /* hallData.swift in Sources */,
 				05EFF218298EC8FC00B869A0 /* SceneDelegate.swift in Sources */,
 				05EFF22F298F1B7C00B869A0 /* MainTableViewCell.swift in Sources */,
+				05EFF237298F5CEC00B869A0 /* DiningHallViewCell.swift in Sources */,
 				05EFF22A298F194D00B869A0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

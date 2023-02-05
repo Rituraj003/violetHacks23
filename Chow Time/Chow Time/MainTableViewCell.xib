@@ -67,10 +67,10 @@
             <viewLayoutGuide key="safeArea" id="NJ9-jo-8o6"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="CenterName" destination="HAo-bG-i9k" id="44D-wF-llE"/>
-                <outlet property="availableCount" destination="1Lb-3H-bRK" id="gHa-ZN-mHf"/>
+                <outlet property="CenterName" destination="HAo-bG-i9k" id="OJb-qq-83C"/>
+                <outlet property="availableCount" destination="1Lb-3H-bRK" id="OUq-GY-wAe"/>
                 <outlet property="contentView" destination="zeE-xH-nO5" id="OlM-Gq-tT7"/>
-                <outlet property="viewBox" destination="Pp8-OT-lqP" id="5mL-pq-U2I"/>
+                <outlet property="viewBox" destination="Pp8-OT-lqP" id="Nez-nt-2eX"/>
             </connections>
             <point key="canvasLocation" x="140.45801526717557" y="-58.098591549295776"/>
         </tableViewCell>

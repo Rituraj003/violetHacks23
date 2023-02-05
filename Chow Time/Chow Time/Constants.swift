@@ -10,5 +10,6 @@ import Foundation
 struct Constants{
     //Static let cellIndentifer = ""
     static let MainCellIdentifier = "MainTableViewCell"
+    static let CellIdentifier = "DiningHallCell"
     
 }

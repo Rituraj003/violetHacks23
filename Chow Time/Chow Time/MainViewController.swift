@@ -9,15 +9,15 @@ import UIKit
 
 class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
-    
+
     @IBOutlet weak var topSubView: UIView!
     @IBOutlet weak var profileImage: UIImageView!
     
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var IntroductionText: UILabel!
-    
+    @IBOutlet weak var IntroductionLabel: UILabel!
     @IBOutlet weak var restaurantLabel: UILabel!
-    @IBOutlet weak var balanceInfoLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var balanceLabel: UILabel!
+    
     
     let data = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"]
 
@@ -50,15 +50,15 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         profileImage.layer.borderColor = UIColor.black.cgColor
         
         
-        IntroductionText.font = UIFont.boldSystemFont(ofSize: 18)
-        IntroductionText.textColor = .black
-        IntroductionText.textAlignment = .center
-        IntroductionText.numberOfLines = 0
+        IntroductionLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        IntroductionLabel.textColor = .black
+        IntroductionLabel.textAlignment = .center
+        IntroductionLabel.numberOfLines = 0
         
-        balanceInfoLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        balanceInfoLabel.textColor = .black
-        balanceInfoLabel.textAlignment = .center
-        balanceInfoLabel.numberOfLines = 0
+        balanceLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        balanceLabel.textColor = .black
+        balanceLabel.textAlignment = .center
+        balanceLabel.numberOfLines = 0
         tableView.backgroundColor = UIColor.clear
 
     }

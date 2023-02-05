@@ -103,22 +103,75 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Dq0-wj-pqH" kind="presentation" identifier="CenterRes" id="Muy-Mk-hej"/>
+                        <outlet property="IntroductionLabel" destination="Bfk-W3-ibt" id="e1B-IU-fhM"/>
+                        <outlet property="balanceLabel" destination="2dt-Qf-1Ze" id="ILU-zd-wMq"/>
+                        <outlet property="profileImage" destination="ffG-hA-dLN" id="3hW-z7-5HQ"/>
+                        <outlet property="restaurantLabel" destination="7PQ-0w-uik" id="ygQ-S3-0nh"/>
+                        <outlet property="tableView" destination="Hj2-UC-su8" id="R9x-kj-QPb"/>
+                        <outlet property="topSubView" destination="PFf-rR-9mi" id="Zt1-Ij-9DW"/>
+                        <segue destination="Dq0-wj-pqH" kind="presentation" identifier="CenterRes" modalPresentationStyle="fullScreen" id="Muy-Mk-hej"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant View Controller-->
         <scene sceneID="ifa-4O-DgR">
             <objects>
-                <viewController id="Dq0-wj-pqH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mju-JX-4rA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                <viewController id="Dq0-wj-pqH" customClass="RestaurantViewController" customModule="Chow_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hg3-CZ-gbG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Zyf-NC-ab4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="isa-nK-c0p">
+                                <rect key="frame" x="0.0" y="118" width="393" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="417-Mc-XZJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="855-Hn-pxK"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="104" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tet-pJ-RYq">
+                                <rect key="frame" x="16" y="236" width="358" height="608"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="separatorColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <sections/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turner Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePw-MU-qJy">
+                                <rect key="frame" x="10" y="173" width="133.66666666666666" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="vdt-k6-TkU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1D-I4-DVS">
+                                <rect key="frame" x="10" y="59" width="74" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrowshape.turn.up.backward.fill" catalog="system" title="  "/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VT Dining Center" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PxY-wW-XYl">
+                                <rect key="frame" x="76" y="39" width="317" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="34"/>
+                                <color key="textColor" red="0.8980392157" green="0.88235294119999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WBl-MQ-LOP"/>
+                        <color key="backgroundColor" red="0.52549019610000003" green="0.1215686275" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="isa-nK-c0p" firstAttribute="leading" secondItem="WBl-MQ-LOP" secondAttribute="leading" id="2jx-jK-8bL"/>
+                            <constraint firstItem="isa-nK-c0p" firstAttribute="trailing" secondItem="WBl-MQ-LOP" secondAttribute="trailing" id="9cm-Rz-hAd"/>
+                            <constraint firstItem="ePw-MU-qJy" firstAttribute="leading" secondItem="WBl-MQ-LOP" secondAttribute="leading" constant="10" id="Ev3-Te-tu0"/>
+                            <constraint firstItem="ePw-MU-qJy" firstAttribute="top" secondItem="isa-nK-c0p" secondAttribute="bottom" id="nyc-9N-T46"/>
+                            <constraint firstItem="isa-nK-c0p" firstAttribute="top" secondItem="PxY-wW-XYl" secondAttribute="bottom" id="pGf-At-tHM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKM-VY-42y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -127,10 +180,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="104"/>
         <image name="profile" width="500" height="500"/>
         <image name="wallpaper" width="245.33332824707031" height="531"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
