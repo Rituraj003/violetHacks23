@@ -157,12 +157,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turner Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePw-MU-qJy">
-                                <rect key="frame" x="146" y="173" width="101" height="65"/>
+                                <rect key="frame" x="130" y="173" width="133.33333333333337" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="vdt-k6-TkU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -171,7 +171,7 @@
                         <constraints>
                             <constraint firstItem="isa-nK-c0p" firstAttribute="leading" secondItem="WBl-MQ-LOP" secondAttribute="leading" id="2jx-jK-8bL"/>
                             <constraint firstItem="isa-nK-c0p" firstAttribute="trailing" secondItem="WBl-MQ-LOP" secondAttribute="trailing" id="9cm-Rz-hAd"/>
-                            <constraint firstItem="ePw-MU-qJy" firstAttribute="leading" secondItem="hg3-CZ-gbG" secondAttribute="leadingMargin" constant="130" id="AvV-LS-aX1"/>
+                            <constraint firstItem="ePw-MU-qJy" firstAttribute="top" secondItem="isa-nK-c0p" secondAttribute="bottom" id="UPf-CU-Phs"/>
                             <constraint firstItem="ePw-MU-qJy" firstAttribute="top" secondItem="isa-nK-c0p" secondAttribute="bottom" id="ee5-cP-Ana"/>
                             <constraint firstItem="ePw-MU-qJy" firstAttribute="top" secondItem="isa-nK-c0p" secondAttribute="bottom" id="nyc-9N-T46"/>
                             <constraint firstItem="isa-nK-c0p" firstAttribute="top" secondItem="PxY-wW-XYl" secondAttribute="bottom" id="pGf-At-tHM"/>
