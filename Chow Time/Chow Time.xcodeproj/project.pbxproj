@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		055920B9298FE486003307E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 055920B8298FE486003307E0 /* GoogleService-Info.plist */; };
 		055920BB298FEAA5003307E0 /* CenterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055920BA298FEAA5003307E0 /* CenterData.swift */; };
+		055920BD298FFEB7003307E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 055920BC298FFEB7003307E0 /* GoogleService-Info.plist */; };
 		05EFF216298EC8FC00B869A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF215298EC8FC00B869A0 /* AppDelegate.swift */; };
 		05EFF218298EC8FC00B869A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF217298EC8FC00B869A0 /* SceneDelegate.swift */; };
 		05EFF21D298EC8FC00B869A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EFF21B298EC8FC00B869A0 /* Main.storyboard */; };
@@ -26,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		055920B8298FE486003307E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		055920BA298FEAA5003307E0 /* CenterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterData.swift; sourceTree = "<group>"; };
+		055920BC298FFEB7003307E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05EFF212298EC8FC00B869A0 /* Chow Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chow Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EFF215298EC8FC00B869A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05EFF217298EC8FC00B869A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				05EFF21E298EC8FE00B869A0 /* Assets.xcassets */,
 				05EFF220298EC8FE00B869A0 /* LaunchScreen.storyboard */,
 				05EFF223298EC8FE00B869A0 /* Info.plist */,
-				055920B8298FE486003307E0 /* GoogleService-Info.plist */,
+				055920BC298FFEB7003307E0 /* GoogleService-Info.plist */,
 			);
 			path = "Chow Time";
 			sourceTree = "<group>";
@@ -183,7 +183,7 @@
 				05EFF230298F1B7C00B869A0 /* MainTableViewCell.xib in Resources */,
 				05EFF238298F5CEC00B869A0 /* DiningHallViewCell.xib in Resources */,
 				05EFF21D298EC8FC00B869A0 /* Main.storyboard in Resources */,
-				055920B9298FE486003307E0 /* GoogleService-Info.plist in Resources */,
+				055920BD298FFEB7003307E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
