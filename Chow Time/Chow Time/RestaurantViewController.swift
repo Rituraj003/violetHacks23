@@ -83,7 +83,12 @@ class RestaurantViewController: UIViewController,UITableViewDataSource, UITableV
         cell.hallName?.text = self.hallDatas[indexPath.row].name
         cell.peopleCount?.text = "No. of people: " + String(self.hallDatas[indexPath.row].peopleCounts)
         cell.waitTime?.text = "Estimate wait time : "  + String(self.hallDatas[indexPath.row].waitTime) + " min"
-        cell.hallLogo?.image = UIImage(named: self.hallDatas[indexPath.row].name)
+        if (UIImage(named: self.hallDatas[indexPath.row].name) != nil){
+            cell.hallLogo?.image = UIImage(named: self.hallDatas[indexPath.row].name)
+        }
+        else {
+            cell.hallLogo?.image = UIImage(named: "image_processing20200821-7947-iafnof")
+        }
         cell.layer.backgroundColor = UIColor.clear.cgColor
         cell.viewBox.layer.cornerRadius = 20
         cell.viewBox.clipsToBounds = true
