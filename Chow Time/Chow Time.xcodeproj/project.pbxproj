@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055920B9298FE486003307E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 055920B8298FE486003307E0 /* GoogleService-Info.plist */; };
+		055920BB298FEAA5003307E0 /* CenterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055920BA298FEAA5003307E0 /* CenterData.swift */; };
 		05EFF216298EC8FC00B869A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF215298EC8FC00B869A0 /* AppDelegate.swift */; };
 		05EFF218298EC8FC00B869A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF217298EC8FC00B869A0 /* SceneDelegate.swift */; };
-		05EFF21A298EC8FC00B869A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EFF219298EC8FC00B869A0 /* ViewController.swift */; };
 		05EFF21D298EC8FC00B869A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EFF21B298EC8FC00B869A0 /* Main.storyboard */; };
 		05EFF21F298EC8FE00B869A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05EFF21E298EC8FE00B869A0 /* Assets.xcassets */; };
 		05EFF222298EC8FE00B869A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EFF220298EC8FE00B869A0 /* LaunchScreen.storyboard */; };
@@ -25,10 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		055920B8298FE486003307E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		055920BA298FEAA5003307E0 /* CenterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterData.swift; sourceTree = "<group>"; };
 		05EFF212298EC8FC00B869A0 /* Chow Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chow Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EFF215298EC8FC00B869A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05EFF217298EC8FC00B869A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05EFF219298EC8FC00B869A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05EFF21C298EC8FC00B869A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05EFF21E298EC8FE00B869A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05EFF221298EC8FE00B869A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,11 +91,12 @@
 				05EFF235298F5CEC00B869A0 /* DiningHallViewCell.swift */,
 				05EFF236298F5CEC00B869A0 /* DiningHallViewCell.xib */,
 				05EFF233298F5C7000B869A0 /* hallData.swift */,
-				05EFF219298EC8FC00B869A0 /* ViewController.swift */,
+				055920BA298FEAA5003307E0 /* CenterData.swift */,
 				05EFF21B298EC8FC00B869A0 /* Main.storyboard */,
 				05EFF21E298EC8FE00B869A0 /* Assets.xcassets */,
 				05EFF220298EC8FE00B869A0 /* LaunchScreen.storyboard */,
 				05EFF223298EC8FE00B869A0 /* Info.plist */,
+				055920B8298FE486003307E0 /* GoogleService-Info.plist */,
 			);
 			path = "Chow Time";
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				05EFF230298F1B7C00B869A0 /* MainTableViewCell.xib in Resources */,
 				05EFF238298F5CEC00B869A0 /* DiningHallViewCell.xib in Resources */,
 				05EFF21D298EC8FC00B869A0 /* Main.storyboard in Resources */,
+				055920B9298FE486003307E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,10 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EFF22C298F1AD500B869A0 /* Constants.swift in Sources */,
-				05EFF21A298EC8FC00B869A0 /* ViewController.swift in Sources */,
 				05EFF232298F5C1600B869A0 /* RestaurantViewController.swift in Sources */,
 				05EFF216298EC8FC00B869A0 /* AppDelegate.swift in Sources */,
 				05EFF234298F5C7000B869A0 /* hallData.swift in Sources */,
+				055920BB298FEAA5003307E0 /* CenterData.swift in Sources */,
 				05EFF218298EC8FC00B869A0 /* SceneDelegate.swift in Sources */,
 				05EFF22F298F1B7C00B869A0 /* MainTableViewCell.swift in Sources */,
 				05EFF237298F5CEC00B869A0 /* DiningHallViewCell.swift in Sources */,

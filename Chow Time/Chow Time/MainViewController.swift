@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
@@ -18,9 +21,21 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var balanceLabel: UILabel!
     
+    var db: Firestore!
     
-    let data = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"]
+    
+    var centerDatas : [centerData] = [centerData(name: "DiningCenter"),centerData(name: "diningCentre"), centerData(name: "Turner Place"), centerData(name: "Ovens"), centerData(name: "Squires")]
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+        DispatchQueue.main.async {
+            if !self.centerDatas.isEmpty {
+                self.tableView.reloadData()
+            }
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +44,11 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         tableView.dataSource = self
         self.tableView.rowHeight = 90
         
+        let settings = FirestoreSettings()
+        Firestore.firestore().settings = settings
+        db = Firestore.firestore()
 
-        
+        readData()
         topSubView.backgroundColor = UIColor.clear
 
         let backgroundImage = UIImage(named: "wallpaper")
@@ -72,13 +90,13 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return centerDatas.count
       }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.MainCellIdentifier, for: indexPath) as! MainTableViewCell
-        cell.CenterName?.text = data[indexPath.row]
-        cell.availableCount?.text! += String(indexPath.row)
+        cell.CenterName?.text = centerDatas[indexPath.row].name
+        cell.availableCount?.text! = "available halls: "  +  String(centerDatas[indexPath.row].availableHalls)
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
         cell.viewBox.backgroundColor = UIColor.clear
@@ -93,6 +111,22 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         performSegue(withIdentifier: "CenterRes", sender: self)
     }
     
+    private func readData(){
+        for i in 0...1 {
+            print(centerDatas[i])
+            let collectionRef = db.collection(centerDatas[i].name)
+            
+            collectionRef.getDocuments { QuerySnapshot, error in
+                if let error = error {
+                    print("Eror getting documents: \(error)")
+                } else {
+                    print(QuerySnapshot?.count)
+                    self.centerDatas[i].availableHalls  = QuerySnapshot?.count ?? 1
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
     
     
     /*

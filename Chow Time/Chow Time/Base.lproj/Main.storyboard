@@ -154,6 +154,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="arrowshape.turn.up.backward.fill" catalog="system" title="  "/>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="Dq0-wj-pqH" eventType="touchUpInside" id="Iob-2H-J4Y"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VT Dining Center" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PxY-wW-XYl">
                                 <rect key="frame" x="76" y="39" width="317" height="79"/>
@@ -173,6 +176,10 @@
                             <constraint firstItem="isa-nK-c0p" firstAttribute="top" secondItem="PxY-wW-XYl" secondAttribute="bottom" id="pGf-At-tHM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="tet-pJ-RYq" id="Vp9-uc-Ox2"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="backSegue" modalPresentationStyle="fullScreen" id="szT-tt-3Y6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKM-VY-42y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

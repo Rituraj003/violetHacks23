@@ -6,15 +6,24 @@
 //
 
 import UIKit
-
+import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 class RestaurantViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
+    var db: Firestore!
+
     
     var hallDatas : [hallData] = []
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        readData()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +43,10 @@ class RestaurantViewController: UIViewController,UITableViewDataSource, UITableV
         self.tableView.delegate = self
         
         self.tableView.rowHeight = 280.0
+        
+        let settings = FirestoreSettings()
+        Firestore.firestore().settings = settings
+        db = Firestore.firestore()
         
         //Rotate the view
 //        CGAffineTransform transform  =
@@ -74,6 +87,49 @@ class RestaurantViewController: UIViewController,UITableViewDataSource, UITableV
         return cell
     }
     
+    func readData()
+    {
+        let docRef = db.collection("diningCentre")
+        docRef.addSnapshotListener { document, error in
+            print("Snapshot listener called")
+            self.hallDatas = []
+            if let document = document?.documents, !document.isEmpty {
+                for i in 0..<document.count {
+                    let data = document[i].data()
+                    let name = data["hallName"]!
+                    let tempHallData = hallData(name: name as! String)
+                    self.hallDatas.append(tempHallData)
+                    let peopleCountData = docRef.document(document[i].documentID).collection("peopleCount").order(by: "timestamp", descending: true)
+                    peopleCountData.addSnapshotListener { countDoc, error in
+                        if let countData = countDoc?.documents, !countData.isEmpty {
+                            print(countData.count)
+                            print(type(of: countData))
+                            print(countData[0].data(), countData[0],name)
+                            if (countData.count > 0)
+                            {
+                                self.hallDatas[i].peopleCounts = countData[0].data()["noOfpeople"] as! Int
+                                self.hallDatas[i].Timestamp = countData[0].data()["timestamp"] as! Int
+                                self.hallDatas[i].waitTime = countData[0].data()["waitTime"] as! Int
+                            }
+                            //let mostRecentDataIndex = self.sortByTimestamp(arr: countData)
+                            
+                            print(1)
+                            DispatchQueue.main.async {
+                                if !self.hallDatas.isEmpty {
+                                    self.tableView.reloadData()
+                                }
+                            }
+                            print(2)
+                        }
+                        print(3)
+                    }
+                    print(4)
+                }
+                print(5)
+            }
+        }
+        print(self.hallDatas)
+    }
     
 
     /*
