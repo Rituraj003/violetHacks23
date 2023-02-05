@@ -13,15 +13,18 @@ import FirebaseFirestore
 class RestaurantViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
     
+    @IBOutlet weak var hallNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     var db: Firestore!
+    var hallName = ""
 
     
     var hallDatas : [hallData] = []
+    var mappedNames : [String: String] = ["turnerPlace": "Turner Place", "dietrickHall": "Dietrick Hall","graduateLifeCenter": "Graduate Life Center", "owensFoodCourt" : "Owens Food Court", "squiresFoodCourt": "Squires Food Court", "westEndMarket" : "West End Market" ]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        readData()
+        readData(hallName: hallName)
         
     }
     
@@ -54,6 +57,7 @@ class RestaurantViewController: UIViewController,UITableViewDataSource, UITableV
         self.registerTableViewCells()
         // Do any additional setup after loading the view.
         tableView.backgroundColor = UIColor.clear
+        hallNameLabel.text = mappedNames[hallName]
         
     }
     
@@ -87,9 +91,9 @@ class RestaurantViewController: UIViewController,UITableViewDataSource, UITableV
         return cell
     }
     
-    func readData()
+    func readData(hallName: String)
     {
-        let docRef = db.collection("diningCentre")
+        let docRef = db.collection(hallName)
         docRef.addSnapshotListener { document, error in
             print("Snapshot listener called")
             self.hallDatas = []

@@ -24,7 +24,9 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     var db: Firestore!
     
     
-    var centerDatas : [centerData] = [centerData(name: "DiningCenter"),centerData(name: "diningCentre"), centerData(name: "Turner Place"), centerData(name: "Ovens"), centerData(name: "Squires")]
+    var centerDatas : [centerData] = [centerData(name: "turnerPlace"),centerData(name: "dietrickHall"), centerData(name: "graduateLifeCenter"), centerData(name: "owensFoodCourt"), centerData(name: "squiresFoodCourt"), centerData(name: "westEndMarket")]
+    
+    var mappedNames : [String: String] = ["turnerPlace": "Turner Place", "dietrickHall": "Dietrick Hall","graduateLifeCenter": "Graduate Life Center", "owensFoodCourt" : "Owens Food Court", "squiresFoodCourt": "Squires Food Court", "westEndMarket" : "West End Market" ]
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -69,15 +71,23 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         
         
         IntroductionLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        IntroductionLabel.textColor = .black
+        IntroductionLabel.textColor = .white
         IntroductionLabel.textAlignment = .center
         IntroductionLabel.numberOfLines = 0
         
         balanceLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        balanceLabel.textColor = .black
+        balanceLabel.textColor = .white
         balanceLabel.textAlignment = .center
         balanceLabel.numberOfLines = 0
         tableView.backgroundColor = UIColor.clear
+        
+        restaurantLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        restaurantLabel.textColor = .white
+        restaurantLabel.textAlignment = .center
+        restaurantLabel.numberOfLines = 0
+        restaurantLabel.backgroundColor = UIColor.clear
+        
+        
 
     }
     
@@ -95,7 +105,7 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.MainCellIdentifier, for: indexPath) as! MainTableViewCell
-        cell.CenterName?.text = centerDatas[indexPath.row].name
+        cell.CenterName?.text = mappedNames[centerDatas[indexPath.row].name]
         cell.availableCount?.text! = "available halls: "  +  String(centerDatas[indexPath.row].availableHalls)
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
@@ -107,12 +117,21 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+//        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "CenterRes", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CenterRes" {
+            let detailVc = segue.destination as! RestaurantViewController
+            let selectIndexPath = self.tableView.indexPathForSelectedRow!
+            let data = centerDatas[selectIndexPath.row]
+            detailVc.hallName = data.name
+        }
+    }
+    
     private func readData(){
-        for i in 0...1 {
+        for i in 0...centerDatas.count-1 {
             print(centerDatas[i])
             let collectionRef = db.collection(centerDatas[i].name)
             

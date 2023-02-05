@@ -18,6 +18,98 @@
             endingLineNumber = "20"
             landmarkName = "MainViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AF1425D8-39BD-4C39-8139-4F67183FE624 - f4130f28440f8139"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.restaurantLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "AF1425D8-39BD-4C39-8139-4F67183FE624 - b06102a340d65cd"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.restaurantLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "AF1425D8-39BD-4C39-8139-4F67183FE624 - 527ea47a624b683c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.restaurantLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "AF1425D8-39BD-4C39-8139-4F67183FE624 - 82eff0f1c95959cc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.restaurantLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "AF1425D8-39BD-4C39-8139-4F67183FE624 - 8535da6a5855f990"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Chow_Time.MainViewController"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "AF1425D8-39BD-4C39-8139-4F67183FE624 - eed1db9dc60037ef"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Chow_Time.MainViewController&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -34,6 +126,98 @@
             endingLineNumber = "18"
             landmarkName = "MainViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A9CFC80A-D7BC-4119-B9CF-37DA2D88D5EA - 90d212dbf8f30185"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.IntroductionLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "A9CFC80A-D7BC-4119-B9CF-37DA2D88D5EA - 2c9bc47bf036ed91"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.IntroductionLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "A9CFC80A-D7BC-4119-B9CF-37DA2D88D5EA - f8e934700cdaee86"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.IntroductionLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "A9CFC80A-D7BC-4119-B9CF-37DA2D88D5EA - a3284aab861d153d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.IntroductionLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "A9CFC80A-D7BC-4119-B9CF-37DA2D88D5EA - 8535da6a5855fe77"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Chow_Time.MainViewController"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "A9CFC80A-D7BC-4119-B9CF-37DA2D88D5EA - eed1db9dc6003008"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chow_Time.MainViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Chow_Time.MainViewController&gt;"
+                  moduleName = "Chow Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rituraj/Desktop/python_files/violetHacks23/Chow%20Time/Chow%20Time/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
