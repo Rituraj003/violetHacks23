@@ -31,9 +31,9 @@ class dbConnect:
     
     def addData(self,timestamp,people, waitTime ,id = None):
         if id == None:
-            id = "c297f6f6-6f2c-11ed-a1eb-0242ac120002"
+            id = "4c474a7a-a50e-11ed-accf-1abc38855fb1"
         myuuid = uuid.uuid1()
-        collection = self.db.collection('squiresFoodCourt').document(id).collection("peopleCount")
+        collection = self.db.collection('turnerPlace').document(id).collection("peopleCount")
         res = collection.document(str(myuuid)).set({
             "noOfpeople":people,
             "timestamp": timestamp,
@@ -61,12 +61,12 @@ class dbConnect:
 #           AND CREARE CLONE INSTANCE OF ALREADY CREATED DOCUMENTS.
 
 
-a = dbConnect()
-Data = ["Au Bon Pain", "Burger '37"]
-for hall in Data:
-    currentTime = datetime.datetime.now().timestamp()
-    noOfPeople = random.randint(1,12)
-    id = a.addDocument(hall)
-    waitTime = round(2* noOfPeople / 3)
-    a.addData(round(currentTime),noOfPeople,waitTime,str(id))
+# a = dbConnect()
+# Data = ["Au Bon Pain", "Burger '37"]
+# for hall in Data:
+#     currentTime = datetime.datetime.now().timestamp()
+#     noOfPeople = random.randint(1,12)
+#     id = a.addDocument(hall)
+#     waitTime = round(2* noOfPeople / 3)
+#     a.addData(round(currentTime),noOfPeople,waitTime,str(id))
         
